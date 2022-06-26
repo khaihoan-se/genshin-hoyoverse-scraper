@@ -21,7 +21,7 @@ app.use(
 app.use('/', (req, resp) => {
     resp.json('hello word')
 })
-app.use('/api/genshin-impact/key-features', (req, resp) => {
+app.use('/api/key-features', (req, resp) => {
     try {
         getKeyFeatures().then(key => {
             resp.status(200).json(key);
@@ -31,7 +31,7 @@ app.use('/api/genshin-impact/key-features', (req, resp) => {
     }
 })
 
-app.use('/api/genshin-impact/all_character', (req, resp) => {
+app.use('/api/all_character', (req, resp) => {
     const limit = Number(req.query.limit);
     try {
         getAllCharacter().then(character => {
