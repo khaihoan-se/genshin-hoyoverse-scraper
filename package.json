@@ -6,9 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon server.js",
-    "server-install": "npm install",
-    "heroku-postbuild": "npm run build"
+    "server": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
