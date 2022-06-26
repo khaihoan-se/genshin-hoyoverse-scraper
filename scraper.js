@@ -4,9 +4,9 @@ import dotenv from 'dotenv'
 import { colorCharacteFind, randomPrice } from './utils.js'
 dotenv.config();
 
-const genshinImpactDetailsUrl = process.env.GENSHIN_IMPACT_DETAIL_URL;
-const playstationUrl = process.env.PLAYSTATION_URL;
-const genshinImpactUrl = process.env.GENSHIN_IMPACT_URL;
+const genshinImpactDetailsUrl = 'https://genshin-impact.fandom.com/wiki';
+const playstationUrl = 'https://www.playstation.com/en-vn/games/genshin-impact';
+const genshinImpactUrl = 'https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki';
 
 // Get Key Features
 export const getKeyFeatures = async () => {
