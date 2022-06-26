@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "and": "nodemon scraper.js",
-    "build": "build index.js"
+    "server": "nodemon server.js",
+    "server-install": "npm install",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
