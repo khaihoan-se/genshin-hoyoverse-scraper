@@ -18,9 +18,9 @@ app.use(
     parameterLimit: 50000,
   })
 );
-app.use('/', (req, resp) => {
-    resp.json('hello word')
-})
+// app.use('/', (req, resp) => {
+//     resp.json('hello word')
+// })
 app.use('/api/key-features', (req, resp) => {
     try {
         getKeyFeatures().then(key => {
